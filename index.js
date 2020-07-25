@@ -12,7 +12,14 @@ if(votingAge > 18){
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+let firstOne = 10;
 
+let secondOne = "Change it"
+
+if(secondOne === "Change it"){
+    firstOne = 15;
+    console.log("The variable firstOne has been changed to " + firstOne);
+}
 
 
 
