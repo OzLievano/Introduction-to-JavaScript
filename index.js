@@ -99,7 +99,39 @@ console.log(dogFeeder(15,1));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+function rockPaperScissors(userChoice){
+    listOptions = ['Rock',"Paper","Scissors"];
+    compChoice = Math.random(listOptions)
+    if(userChoice === "Rock"){
+        if (compChoice === "Paper"){
+            console.log("Computer Wins!");
+        } else if(compChoice ==="Rock"){
+            console.log("It's a tie!");
+        }else{
+            console.log("You win!");
+        }
+    }else if(userChoice==="Paper"){
+        if (compChoice ==="Rock"){
+            console.log("You win!");
+        }else if(compChoice==="Scissors"){
+            console.log("You lose!");
+        }else{
+            console.log("It's a tie!")
+        }
+    }else if(userChoice==="Scissors"){
+        if(compChoice==="Rock"){
+            console.log("You Lose!");
+        }else if(compChoice==="Paper"){
+            console.log("You win!");
+        }else{
+            console.log("It's a tie")
+        }
+    }else{
+        console.log("Not a correct input please enter another choice!, goodbye!");
+    }
+}
+
+console.log(rockPaperScissors("Paper"));
   
 
 /************************************************************** Task 5 **************************************************************/
