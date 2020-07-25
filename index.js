@@ -32,16 +32,22 @@ console.log(newNum);
 
 //Task d: Write a function to multiply a*b 
 
+function time2(a,b){
+    return a * b;
+}
 
+console.log(time2(99,99));
 
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+// 1 human year = 7 dog years 
 
+let IamDog = (a) => a * 7;
 
-
+console.log(IamDog(25));
 
 
 /************************************************************** Task 3 **************************************************************/
