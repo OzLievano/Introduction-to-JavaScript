@@ -61,13 +61,33 @@ console.log(IamDog(25));
 // 11 - 15 lbs - 3% of their body weight 
 // > 15lbs - 2% of their body weight 
 
+// weight in lbs, age in years
+
 // Puppies less than 1 year
 // 2 - 4 months 10% of their body weight
 // 4 - 7 months 5% of their body weight 
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
+function dogFeeder(weight,age){
+    if(age >= 1){
+        if (weight <=5){
+            let foodAmount = weight * 0.05;
+            return foodAmount
+        }else if(weight >= 6 && weight <= 10){
+            let foodAmount = weight * 0.04;
+           return foodAmount
+        }else if(weight >= 11 && weight <= 15){
+            let foodAmount = weight * 0.03;
+            return foodAmount
+        }else{
+            let foodAmount = weight * 0.02;
+            return foodAmount
+        }
+    }
+}
   
+console.log(dogFeeder(15,1));
 
 
 
