@@ -148,6 +148,11 @@ console.log(kilometerConverter(1));
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
+function feetConverter(Number){
+    return Number * 30.48;
+}
+
+console.log(feetConverter(15));
 
 
 
