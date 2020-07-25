@@ -227,7 +227,38 @@ console.log(countVowel("YourMomma"));
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
+userChoice = prompt("Paper, Rock, or Scissors?").toLowerCase();
 
+function rockPaperScissors(userChoice){
+    listOptions = ['Rock',"Paper","Scissors"];
+    compChoice = Math.random(listOptions)
+    if(userChoice === "Rock".toLowerCase()){
+        if (compChoice === "Paper"){
+            console.log("Computer Wins!");
+        } else if(compChoice ==="Rock"){
+            console.log("It's a tie!");
+        }else{
+            console.log("You win!");
+        }
+    }else if(userChoice==="Paper".toLowerCase()){
+        if (compChoice ==="Rock"){
+            console.log("You win!");
+        }else if(compChoice==="Scissors"){
+            console.log("You lose!");
+        }else{
+            console.log("It's a tie!")
+        }
+    }else if(userChoice==="Scissors".toLowerCase()){
+        if(compChoice==="Rock"){
+            console.log("You Lose!");
+        }else if(compChoice==="Paper"){
+            console.log("You win!");
+        }else{
+            console.log("It's a tie")
+        }
+    }else{
+        console.log("Not a correct input please enter another choice!, goodbye!");
+    }
+}
 
-
-
+console.log(rockPaperScissors(userChoice));
