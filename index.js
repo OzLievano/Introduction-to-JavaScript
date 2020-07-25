@@ -138,7 +138,11 @@ console.log(rockPaperScissors("Paper"));
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function kilometerConverter(Number){
+    return (Number / 8) * 5;
+}
 
+console.log(kilometerConverter(1));
 
 
 
