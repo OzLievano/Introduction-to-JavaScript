@@ -206,6 +206,19 @@ console.log(gradeCalculator(65));
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+function countVowel(string){
+    count = 0
+    vowel_list = 'aeiouAEIOU';
+    for(let i = 0; i < string.length; i++){
+      if (string.includes(vowel_list[i])){
+        count +=1;
+    }
+   }
+    return count +=1;
+}
+
+
+console.log(countVowel("YourMomma"));
 
 
 
