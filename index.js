@@ -164,7 +164,7 @@ console.log(feetConverter(15));
   
 function annoyingSong(countNum){
     for (let i = countNum; i > 0; i--){
-        let newNum = i - 1
+        let newNum = i - 1;
         console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + newNum + " bottles of soda on the wall");
     }
 }
@@ -182,7 +182,22 @@ console.log(annoyingSong(88));
 //60s should be D 
 //and anything below 60 should be F
   
+function gradeCalculator(testMark){
+    if(testMark >=  90){
+        console.log("Great Job, you got an A");
+    }else if(testMark <= 89 && testMark >= 80){
+        console.log("Good Job, you got a B");
+    }else if(testMark <= 79 && testMark >= 70){
+        console.log("You could do better, you got a C");
+    }else if(testMark <= 69 && testMark >= 60){
+        console.log("Study Study Study, you got a D")
+    }else{
+        console.log("You get F!")
+    }
+}
 
+
+console.log(gradeCalculator(65));
   
   
 
