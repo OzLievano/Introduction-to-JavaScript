@@ -207,8 +207,8 @@ console.log(gradeCalculator(65));
 // try looking up the .includes() method
 
 function countVowel(string){
-    count = 0
-    vowel_list = 'aeiouAEIOU';
+    let count = 0
+    const vowel_list = 'aeiouAEIOU';
     for(let i = 0; i < string.length; i++){
       if (string.includes(vowel_list[i])){
         count +=1;
