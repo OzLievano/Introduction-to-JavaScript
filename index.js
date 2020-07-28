@@ -206,19 +206,20 @@ console.log(gradeCalculator(65));
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+const vowel_list =['a','e','i','o','u','A','E','I','O','U'];
+
+let count = 0 
+
 function countVowel(string){
-    let count = 0
-    const vowel_list = 'aeiou';
-    const upper_list = 'AEIOU';
-    for(let i = 0; i < string.length; i++){
-      if (string.includes(vowel_list[i])){
-        count +=1;
-    }else if(string.includes(upper_list[i])){
-        count+=1;
+    for(let letter of string.toLowerCase()){
+      if (vowel_list.includes(letter)){
+        count +=1
     }
    }
-    return count +=1;
+  return count;
 }
+
+console.log(countVowel("hOlIaT"))
 
 
 console.log(countVowel("YourMomma"));
