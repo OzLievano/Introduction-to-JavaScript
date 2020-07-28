@@ -208,10 +208,13 @@ console.log(gradeCalculator(65));
 
 function countVowel(string){
     let count = 0
-    const vowel_list = 'aeiouAEIOU';
+    const vowel_list = 'aeiou';
+    const upper_list = 'AEIOU';
     for(let i = 0; i < string.length; i++){
       if (string.includes(vowel_list[i])){
         count +=1;
+    }else if(string.includes(upper_list[i])){
+        count+=1;
     }
    }
     return count +=1;
@@ -260,6 +263,7 @@ function rockPaperScissors(userChoice){
         console.log("Not a correct input please enter another choice!, goodbye!");
         userChoice = prompt("Paper, Rock, or Scissors?").toLowerCase();
     }
+   return "because you chose " + userChoice;
 }
 
 console.log(rockPaperScissors(userChoice));
