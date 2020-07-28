@@ -211,8 +211,8 @@ const vowel_list =['a','e','i','o','u'];
 let count = 0 
 
 function countVowel(string){
-    for(let letter of string.toLowerCase()){
-      if (vowel_list.includes(letter)){
+    for(let i of string.toLowerCase()){
+      if (vowel_list.includes(i)){
         count +=1
     }
    }
