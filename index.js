@@ -206,7 +206,7 @@ console.log(gradeCalculator(65));
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
-const vowel_list =['a','e','i','o','u','A','E','I','O','U'];
+const vowel_list =['a','e','i','o','u'];
 
 let count = 0 
 
@@ -232,9 +232,8 @@ console.log(countVowel("YourMomma"));
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
 userChoice = prompt("Paper, Rock, or Scissors?").toLowerCase();
-
+listOptions = ['Rock',"Paper","Scissors"];
 function rockPaperScissors(userChoice){
-    listOptions = ['Rock',"Paper","Scissors"];
     compChoice = Math.random(listOptions)
     if(userChoice === "Rock".toLowerCase()){
         if (compChoice === "Paper"){
