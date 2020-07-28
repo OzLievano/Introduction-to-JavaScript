@@ -76,13 +76,24 @@ function dogFeeder(weight,age){
             return foodAmount
         }else if(weight >= 6 && weight <= 10){
             let foodAmount = weight * 0.04;
-           return foodAmount
+            return foodAmount
         }else if(weight >= 11 && weight <= 15){
             let foodAmount = weight * 0.03;
             return foodAmount
         }else{
             let foodAmount = weight * 0.02;
             return foodAmount
+        }
+    }else if(age < 1){
+        if(weight >= 2 && weight <=4){
+            let foodAmount = weight * .10;
+            return foodAmount;
+        }else if(weight >=4 && weight <=7){
+            let foodAmount = weight * .05;
+            return foodAmount;
+        }else if(weight >= 7 && weight <=12){
+            let foodAmount = weight *  .04;
+            return foodAmount;
         }
     }
 }
