@@ -258,6 +258,7 @@ function rockPaperScissors(userChoice){
         }
     }else{
         console.log("Not a correct input please enter another choice!, goodbye!");
+        userChoice = prompt("Paper, Rock, or Scissors?").toLowerCase();
     }
 }
 
